@@ -1,4 +1,4 @@
-# TetraFlip
+# Food For The Poor
 Project of Team A.A.S For the hackathon event TetraFlip
 
 1. Download zip file and Unzip file on your local server.
