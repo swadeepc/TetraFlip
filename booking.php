@@ -16,7 +16,18 @@ table, th, td,tr {
     margin-left:25%; 
     margin-right:25%;
   }
-</style>
+
+  tr:nth-child(even) {
+  background-color: #eee;
+}
+tr:nth-child(odd) {
+ background-color: #fff;
+}
+th {
+  background-color: #303C6C;
+  color: white;
+}
+  </style>
 </head>
 <body>
 <section class="">
@@ -42,10 +53,10 @@ table, th, td,tr {
 								$a=array();
 								$i=0;
 								$pid=0;
-								$qry2= "SELECT Purchase_id from purchase_order";
+								$qry2= "SELECT MAX(Purchase_id) as mx from purchase_order";
 								$result = $conn->query($qry2);
 								while($row = $result->fetch_assoc()){
-									$pid=$row['Purchase_id'];
+									$pid=$row['mx'];
 								}
 								$pid++;
 								$select = "SELECT Item_name,Item_quantity,Item_id from item where Resto_id='$_GET[id]' and Item_quantity>0 ";
@@ -66,7 +77,7 @@ table, th, td,tr {
 							}
 							?>
 							<tr>
-								<td colspan="3" style="text-align:center"><input type="submit" name="save" value="Proceed"></td>
+								<th colspan="3" style="text-align:center"><input type="submit" name="save" value="Proceed"></th>
 							</tr>
 						</table>
 					</form>

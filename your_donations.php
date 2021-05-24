@@ -24,7 +24,7 @@ tr:nth-child(odd) {
  background-color: #fff;
 }
 th {
-  background-color: black;
+  background-color: #303C6C;
   color: white;
 }
 
@@ -38,13 +38,13 @@ th {
 	</section>
 	<section class="listings">
 		<div class="wrapper">
-				<h3 style="text-decoration: underline;">Your Donations</h3>
+				<h2 style="text-decoration: underline;  color: #303C6C">Your Donations</h2>
 </section>
 
 <table align="center">
 							<tr>
-								<th>Food Name:</th>
-								<th>Quantity Available (KG)</th>
+								<th>Food Name</th>
+								<th>Quantity Available (Kg)</th>
 							</tr>
 							<?php
 								session_start();

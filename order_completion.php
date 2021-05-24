@@ -24,7 +24,11 @@ tr:nth-child(odd) {
  background-color: #fff;
 }
 th {
-  background-color: black;
+  background-color: #303C6C;
+  color: white;
+}
+tr:nth-child(1) {
+  background-color: #D2FDFF;
   color: white;
 }
 </style>
@@ -37,7 +41,7 @@ th {
 	</section>
 	<section class="listings">
 		<div class="wrapper">
-				<h3 style="text-decoration: underline;">Your Order:</h3>
+				<h2 style="text-decoration: underline;  color: #303C6C">Your Order</h2>
 </section>
 
 <?php
@@ -73,7 +77,7 @@ th {
 							?>
 						</table>
 </div>
-					<h2 align="center"><input type="submit" onclick="window.print()" align="center" value="Print Here" /></h2>
+				<!--	<h2 align="center"><input type="submit" onclick="window.print()" align="center" value="Print Here" /></h2>  -->
 					
 				</div>
 

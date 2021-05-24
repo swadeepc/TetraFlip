@@ -24,10 +24,13 @@ tr:nth-child(odd) {
  background-color: #fff;
 }
 th {
-  background-color: black;
+  background-color: #303C6C;
   color: white;
 }
-
+tr:nth-child(1) {
+  background-color: #D2FDFF;
+  color: white;
+}
 </style>
 </head>
 <body>
@@ -38,7 +41,7 @@ th {
 	</section>
 	<section class="listings">
 		<div class="wrapper">
-				<h3 style="text-decoration: underline;">Customer Orders</h3>
+				<h2 style="text-decoration: underline; color: #303C6C">Customer Orders</h2>
 </section>
 <?php
 								session_start();
@@ -46,7 +49,7 @@ th {
 								$cid=$_SESSION['cid'];
 								$a=array();
 								$i=0;
-								$select = "SELECT Distinct Purchase_id as p from purchase_order where Resto_id='$cid'";
+								$select = "SELECT Distinct Purchase_id as p from purchase_order where Resto_id='$cid' order by Purchase_id";
 								$result = $conn->query($select);
 								while($row = $result->fetch_assoc()){
 									$iid=$row['p'];
@@ -137,6 +140,6 @@ th {
 								}
 						?>
 </div>
-					<h2 align="center"><input type="submit" onclick="window.print()" align="center" value="Print Here" /></h2>
+				<!--	<h2 align="center"><input type="submit" onclick="window.print()" align="center" value="Print Here" /></h2>  -->
 					
 				</div>

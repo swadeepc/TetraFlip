@@ -12,9 +12,9 @@ table, th, td {
   margin-right: auto;
 }
 th, td {
-  padding: 5px;
+  padding: 2px;
 }
-}
+
 </style>
 </head>
 <body>
@@ -35,36 +35,39 @@ th, td {
 			$password = $row['Password'];
 			}
 		?>
-		<section class="listings">
+		<br><br><br><br>
+		<section class="search">
 		<div class="wrapper">
-			
-				<center><h3>Update Your Details Here</h3><center>
+			<br>
+			<h2 style="text-align:center; color: #303C6C; font-weight:bold; text-decoration:underline">Update Your Details Here</h2>
 				<form method="post">
 					<table>
 						<tr>
-							<td>Name:</td>
+							<td><h3>Name:</h3></td>
 							<td><input type="text" name="name" required value="<?php echo $name;?>"></td>
 						</tr>
 						<tr>
-							<td>Phone Number:</td>
+							<td><h3>Phone Number:</h3></td>
 							<td><input type="text" name="phone" required value="<?php echo $phone;?>"></td>
 						</tr>
 						<tr>
-							<td>Email Address:</td>
+							<td><h3>Email Address:</h3></td>
 							<td><input type="email" name="email" required value="<?php echo $email;?>"></td>
 						</tr>
 						<tr>
-							<td>Password</td>
+							<td><h3>Password</h3></td>
 							<td><input type="password" name="password" required value="<?php echo $password;?>"></td>
 						</tr>
 						<tr>
-							<td>Address:</td>
-							<td><input type="text" name="address" required value="<?php echo $address;?>"></td>
+							<td><h3>Address:</h3></td>
+							<td><textarea name="address" ><?php echo $address;?></textarea></td>
 						</tr>
 						<tr>
 							<td colspan="2" style="text-align:right"><input type="submit" name="save" value="Submit Details"></td>
 						</tr>
+						
 					</table>
+					<br>
 				</form>
 				<?php
 						if(isset($_POST['save'])){

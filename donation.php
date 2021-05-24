@@ -21,10 +21,11 @@ th, td {
 		<?php
 			include 'header2.php';
 		?>
-		<section class="listings">
+		<br><br><br><br>
+		<section class="search">
 		<div class="wrapper">
-			
-				<center><h2>Enter Item Details Here:</h2></center>
+			<br>
+			<h2 style="text-align:center; color: #303C6C; font-weight:bold; text-decoration:underline">Enter Item Details Here</h2>
 				<div id="fom">
 				<form method="post">
 					<table>

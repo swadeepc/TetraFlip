@@ -29,7 +29,7 @@ table {
 			<h2 style="text-align:center; color: green; font-weight:bold; text-decoration:underline">Donator Login Area</h2>
 				<table height="150" align="center">
 					<tr>
-						<td><h3>Email Address:</td>
+						<td><h3>Email Address:</h3></td>
 						<td><input type="text" name="email" placeholder="Enter Email Address" required></td>
 					</tr>
 					<tr>
