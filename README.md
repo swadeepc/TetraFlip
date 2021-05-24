@@ -7,4 +7,4 @@ Project of Team A.A.S For the hackathon event TetraFlip
 Open phpmyadmin
 Create Database named project.
 Import database project.sql from downloaded folder(inside database)
-4. Open Your browser put inside "http://localhost/proj/"
+4. Open Your browser and enter the URL "http://localhost/"Folder_name"
